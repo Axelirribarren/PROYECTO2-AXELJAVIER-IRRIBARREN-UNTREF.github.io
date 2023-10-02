@@ -1,0 +1,76 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "marca": "Apple",
+      "titulo": "iPhone 14 Pro",
+      "img1": "imagenes/productos/iphone/iphone14pro.webp",
+      "img2": "imagenes/productos/iphone/iphone14pro2.webp",
+      "img3": "imagenes/productos/iphone/iphone14pro3.webp",
+      "precio": "$700.000",
+      "descripcion": "El iPhone 14 Pro te permite captar detalles increíbles gracias a su cámara gran angular de 48 MP. Además, trae la Dynamic Island y una pantalla siempre activa, para que puedas interactuar con tu iPhone...",
+      "oferta": "$630.000",
+      "descuento": "10%"
+    },
+    {
+      "id": 2,
+      "marca": "Apple",
+      "titulo": "iPhone SE",
+      "img1": "imagenes/productos/iphone/iphonese2020.webp",
+      "img2": "imagenes/productos/iphone/iphonese20202.webp",
+      "img3": "imagenes/productos/iphone/iphonese20203.webp",
+      "precio": "$350.000",
+      "descripcion": "El iPhone SE es el iPhone más económico de Apple. Tiene una pantalla Retina HD de 4,7 pulgadas, un procesador A15 Bionic, una cámara trasera de 12 megapíxeles y una batería que dura todo el día...",
+      "oferta": "$315,000",
+      "descuento": "10%"
+    },
+    {
+      "id": 3,
+      "marca": "Samsung",
+      "titulo": "Galaxy S23",
+      "img1": "imagenes/productos/samsung/samsungS23.webp",
+      "img2": "imagenes/productos/samsung/samsungS232.webp",
+      "img3": "imagenes/productos/samsung/samsungS233.webp",
+      "precio": "$500.000",
+      "descripcion": "El Samsung Galaxy S23 es el nuevo buque insignia de Samsung, con una pantalla AMOLED de 6,8 pulgadas, un procesador Snapdragon 8 Gen 2, una cámara triple de 50 megapíxeles y una batería de 5000 mAh...",
+      "oferta": "$450,000",
+      "descuento": "10%"
+    },
+    {
+      "id": 4,
+      "marca": "Samsung",
+      "titulo": "Galaxy A54",
+      "img1": "imagenes/productos/samsung/samsungA54.webp",
+      "img2": "imagenes/productos/samsung/samsungA542.webp",
+      "img3": "imagenes/productos/samsung/samsungA543.webp",
+      "precio": "$250.000",
+      "descripcion": "El Samsung Galaxy A54 es un teléfono inteligente de gama media, con una pantalla AMOLED de 6,5 pulgadas, un procesador Snapdragon 778G, una cámara cuádruple de 64 megapíxeles y una batería de 5000 mAh...",
+      "oferta": "$180,000",
+      "descuento": "20%"
+    },
+    {
+      "id": 5,
+      "marca": "Motorola",
+      "titulo": "Edge 30 Ultra",
+      "img1": "imagenes/productos/motorola/30ultra.webp",
+      "img2": "imagenes/productos/motorola/30ultra2.webp",
+      "img3": "imagenes/productos/motorola/30ultra3.webp",
+      "precio": "$450.000",
+      "descripcion":"El MOTOROLA Edge 30 Ultra es un teléfono inteligente de gama alta diseñado para rendimiento y versatilidad. Cuenta con una gran pantalla OLED de 6.7 pulgadas con una resolución de 1440 x 3120, que ofrece vibrantes y detalladas visuales.",
+      "oferta":"$400.000",
+      "descuento": "20%"
+    },
+    {
+      "id": 6,
+      "marca": "Motorola",
+      "titulo": "Edge 40",
+      "img1": "imagenes/productos/motorola/edge40.webp",
+      "img2": "imagenes/productos/motorola/edge402.webp",
+      "img3": "imagenes/productos/motorola/edge403.webp",
+      "precio": "$200.000",
+      "descripcion": "El Motorola Edge 40 es un teléfono inteligente de gama media, con una pantalla AMOLED de 6,7 pulgadas, un procesador Snapdragon 778G, una cámara triple de 50 megapíxeles y una batería de 5000 mAh...",
+      "oferta": "$140.000",
+      "descuento": "30%"
+    }
+  ]}
+  

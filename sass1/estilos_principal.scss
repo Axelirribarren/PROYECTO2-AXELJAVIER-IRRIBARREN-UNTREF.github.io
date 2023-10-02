@@ -1,0 +1,23 @@
+@use "initial";
+@use "var";
+@use "header";
+@use "navbar-mobile";
+@use "navbar";
+@use "cart";
+@use "footer";
+@use "products";
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto:wght@400;700&display=swap');
+
+main{
+    width: 100%;
+    margin:auto;
+    position: relative;
+    
+
+@media (min-width: 1024px) {
+        width: 100%;
+}
+}
+body {
+    background-color: var.$white;
+}

@@ -1,0 +1,12 @@
+En el siguiente proyecto, encontraran una pagina la cual se trata sobre E-COMMERCE sobre venta de celulares.
+Mi proposito para el mismo, es intentar poco a poco crear páginas más completas. 
+
+En esta instancia use y quise probar SASS, lo cual me permitio escribir los estilos en archivos y tenerlo un poco
+más organizado y con algunas caracteristicas que ya estan agregando a CSS, pero quise darle una oportunidad y me gusto por su comodidad (aun me falta aprender bastante).
+
+Tuve ciertas dificultades sobre el LocalStorage, guiandome un poco de la clase N° 14 de JS, pude avanzar y desarrollar bastante. Ahora solo me queda ir agregando funcionalidades aparte, como menu hamburguesa, 
+carrucel de imagenes, para ir sumando mas dinamismo a la pagina, pero no quise cargar de tantas cosas, para entregar la actividad.
+
+El archivo "index.html" es el principal, quise cambiarlo de lugar al "producto.html" pero ya era tarde y no me leia el DOM, LocalStorage, los scripts, etc... entonces lo deje como estaba.
+
+Espero haya cumplido con toda las consignas, un saludo. Irribarren, Axel Javier.

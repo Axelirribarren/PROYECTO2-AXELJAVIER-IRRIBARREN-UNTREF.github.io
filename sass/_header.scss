@@ -1,0 +1,97 @@
+@use "var";
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: var.$white;
+    @media (min-width: 1024px) {
+        height: 6rem;
+    }
+}
+
+.logoDesktop{
+    display: none;
+    @media (min-width: 1024px) {
+        display:flex;
+        width: 15rem;
+    }
+}
+.logoZedier{
+    width: 3rem;
+    @media (min-width: 1024px){
+        display: none;
+    }
+}
+.header_menu{
+    display: flex;
+    width: 3rem;
+    justify-content: space-between;
+    @media (min-width: 1024px) {
+    width: 20rem;
+    }
+}
+.menuBurger{
+    width: 3rem;
+    cursor: pointer;
+    @media (min-width: 1024px){
+        display: none;
+    }
+}
+
+.cart_avatar{
+    display: flex;
+    width: 5rem;
+    justify-content: space-around;
+    padding: 0 1rem;
+    @media (min-width:1024px){
+        width: 15rem;
+    }
+    
+}
+
+.avatar{
+    width: 3rem;
+    @media (min-width: 1024px){
+        width: 5rem;
+    }
+    &:hover{
+        cursor: pointer;
+        border: 3px solid var.$secondary-color;
+        border-radius:45%;
+    }
+}
+
+.img_cart{
+    width: 3rem;
+    @media (min-width: 1024px){
+        width: 5rem;
+    }
+    &:hover{
+        cursor: pointer;
+        border: 3px solid var.$secondary-color;
+        border-radius:45%;
+    }
+}
+
+.cart{
+    position: relative;
+    
+}
+.cart_notifications{
+    background-color: var.$tertiary-color;
+    width: 1.5rem;
+    height: 1.1rem;
+    border-radius: 1rem;
+    position: absolute;
+    left: 2rem;
+    color: var.$primary-color;
+    text-align: center;
+    display: none;
+    @media (min-width:1024px){
+        width: 2rem;
+        height: 1.5rem;
+        left: 3rem;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,51 @@
+@use "var";
+
+footer {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.footer{
+    position: relative;
+    background-color: var.$secondary_color;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#webs{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 1rem;
+}
+#webs li a{
+    text-align: center;
+    text-decoration: none;
+    font-family: var.$font_description;
+    color: var.$white;
+
+}
+#webs li{
+    display: flex;
+}
+
+.contact{
+    display: flex;
+}
+
+#contacts{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 1rem;
+}
+#contacts li a{
+    text-align: center;
+    text-decoration: none;
+    font-family: var.$font_description;
+    color: var.$white;
+}
+#zedier{
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+}

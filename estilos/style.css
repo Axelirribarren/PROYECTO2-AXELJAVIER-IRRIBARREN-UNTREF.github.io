@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #ece8f5;
+}
+@media (min-width: 1024px) {
+  header {
+    height: 6rem;
+  }
+}
+
+.logoDesktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .logoDesktop {
+    display: flex;
+    width: 15rem;
+  }
+}
+
+.logoZedier {
+  width: 3rem;
+}
+@media (min-width: 1024px) {
+  .logoZedier {
+    display: none;
+  }
+}
+
+.header_menu {
+  display: flex;
+  width: 3rem;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .header_menu {
+    width: 20rem;
+  }
+}
+
+.menuBurger {
+  width: 3rem;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .menuBurger {
+    display: none;
+  }
+}
+
+.cart_avatar {
+  display: flex;
+  width: 5rem;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+@media (min-width: 1024px) {
+  .cart_avatar {
+    width: 15rem;
+  }
+}
+
+.avatar {
+  width: 3rem;
+}
+@media (min-width: 1024px) {
+  .avatar {
+    width: 5rem;
+  }
+}
+.avatar:hover {
+  cursor: pointer;
+  border: 3px solid #5a5c81;
+  border-radius: 45%;
+}
+
+.img_cart {
+  width: 3rem;
+}
+@media (min-width: 1024px) {
+  .img_cart {
+    width: 5rem;
+  }
+}
+.img_cart:hover {
+  cursor: pointer;
+  border: 3px solid #5a5c81;
+  border-radius: 45%;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart_notifications {
+  background-color: #282736;
+  width: 1.5rem;
+  height: 1.1rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 2rem;
+  color: #9896d6;
+  text-align: center;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .cart_notifications {
+    width: 2rem;
+    height: 1.5rem;
+    left: 3rem;
+    font-size: 1.3rem;
+  }
+}
+
+.mobile_div {
+  background-color: hsla(0, 0%, 0%, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 10;
+}
+
+.nav_bar_mobile {
+  background-color: white;
+  width: 60%;
+  padding: 3rem 2rem;
+  height: 100%;
+  position: relative;
+}
+
+.nav_bar_mobile_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.nav_bar_link_mobile {
+  text-decoration: none;
+  color: #282736;
+  font-size: 1.5rem;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+}
+
+.nav_bar_mobile img {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 1.6rem;
+  left: 2rem;
+}
+
+.nav_bar {
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .nav_bar {
+    display: none;
+  }
+}
+
+.nav_bar_items {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav_bar_link {
+  text-decoration: none;
+  color: #5a5c81;
+  font-size: 1.8rem;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+}
+.nav_bar_link:hover {
+  border-bottom: 3px solid #5a5c81;
+  color: #000000;
+}
+
+.gallery {
+  width: 100%;
+  height: 24rem;
+}
+
+.gallery_side {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url(../imagenes/productos/iphone/iphone14pro.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 1s;
+  background-color: white;
+}
+@media (min-width: 1024px) {
+  .gallery_side {
+    width: 100%;
+  }
+}
+
+.next {
+  width: 2rem;
+  position: absolute;
+  left: 2px;
+  cursor: pointer;
+}
+
+.previous {
+  width: 2rem;
+  position: absolute;
+  right: 2px;
+  cursor: pointer;
+}
+
+.gallery_minis {
+  width: 2rem;
+}
+
+.gallery_container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .gallery_container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product {
+    width: 100%;
+    background-color: white;
+  }
+}
+
+.product h3 {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  color: #ece8f5;
+  background-color: #282736;
+  padding-left: 1rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.company {
+  color: #9896d6;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .company {
+    font-size: 2rem;
+  }
+}
+
+.product_title {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  color: #282736;
+  padding-left: 1rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .product_title {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.product_descriptions {
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  color: #282736;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: justify;
+}
+.product_descriptions span {
+  color: #9896d6;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .product_descriptions span {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .product_descriptions {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+}
+
+.prices {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product_price {
+  display: flex;
+  align-items: center;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  color: #282736;
+  font-size: 2rem;
+}
+.product_price .product_discount {
+  color: #ece8f5;
+  font-size: 1rem;
+  background-color: #9896d6;
+  border-radius: 5px;
+  padding: 1px 2px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .product_price {
+    font-size: 2.5rem;
+  }
+  .product_price span {
+    font-size: 2rem;
+    bottom: 1.5rem;
+  }
+}
+
+.product_before {
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  color: #9896d6;
+  font-size: 2rem;
+  text-decoration: line-through;
+}
+@media (min-width: 1024px) {
+  .product_before {
+    font-size: 2.5rem;
+  }
+}
+
+.product_quantity {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #9896d6;
+  border-radius: 1rem;
+  border: 2px solid #5a5c81;
+}
+@media (min-width: 1025px) {
+  .input {
+    width: 50%;
+    font-size: 2rem;
+    height: 3rem;
+  }
+}
+
+.input_number {
+  background-color: #9896d6;
+  color: #ece8f5;
+  width: 5rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: none;
+  font-size: 1.4rem;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  outline: none;
+}
+@media (min-width: 1025px) {
+  .input_number {
+    font-size: 2rem;
+  }
+}
+
+.input img {
+  display: flex;
+  align-self: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #9896d6;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.input img:hover {
+  background-color: #5a5c81;
+}
+@media (min-width: 1024px) {
+  .input img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.product_add {
+  width: 45%;
+  background-color: #9896d6;
+  color: #ece8f5;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  font-size: 1.2rem;
+  border: solid 2px #5a5c81;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.product_add:hover {
+  background-color: #5a5c81;
+}
+@media (min-width: 1025px) {
+  .product_add {
+    font-size: 2rem;
+    height: 3rem;
+  }
+}
+
+.cart_object {
+  display: none;
+  border: solid 2px #5a5c81;
+  width: 80%;
+  height: 15rem;
+  box-shadow: 3px 3px 10px;
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.cart_title {
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: 2px solid #5a5c81;
+  color: #282736;
+}
+
+.cart_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.cart_descriptions {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 1rem;
+}
+
+.cart_descriptions img {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.cart_product {
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+.cart_prices {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+}
+.cart_prices span {
+  font-weight: bold;
+  color: #282736;
+}
+
+.cart_object_buy {
+  width: 80%;
+  margin: auto;
+  background-color: #9896d6;
+  border-radius: 1rem;
+  height: 2rem;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  font-size: 1rem;
+  color: #ece8f5;
+  border: 2px solid #5a5c81;
+  cursor: pointer;
+}
+.cart_object_buy:hover {
+  background-color: #5a5c81;
+}
+
+#trash {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: center;
+}
+
+.desktop_background {
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+@media (max-width: 1024px) {
+  .desktop_background {
+    display: none;
+  }
+}
+
+#close_gallery {
+  width: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 10;
+}
+
+#desktop_next {
+  width: 3rem;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  margin-left: 1rem;
+}
+
+#desktop_previous {
+  width: 3rem;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  margin-right: 1rem;
+}
+
+.gallery_desktop_side {
+  margin-top: 2rem;
+  background-image: url(../imagenes/productos/iphone/iphone14pro.webp);
+  height: 30rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.gallery_desktop_minis {
+  width: 100%;
+  display: flex;
+  gap: 10%;
+  padding-top: 1rem;
+}
+
+#desktop_img_2 {
+  width: 45%;
+  border-radius: 1rem;
+}
+
+#desktop_img_3 {
+  width: 45%;
+  border-radius: 1rem;
+}
+
+footer {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.footer {
+  position: relative;
+  background-color: #5a5c81;
+  display: flex;
+  justify-content: space-around;
+}
+
+#webs {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+#webs li a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  color: #ece8f5;
+}
+
+#webs li {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+}
+
+#contacts {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+#contacts li a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Belanosima", helvetica, arial, sans-serif;
+  color: #ece8f5;
+}
+
+#zedier {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  main {
+    width: 100%;
+  }
+}
+
+body {
+  background-color: #ece8f5;
+}
+
+/*# sourceMappingURL=style.css.map */

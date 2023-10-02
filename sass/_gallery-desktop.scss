@@ -1,0 +1,70 @@
+@use "var";
+
+.desktop_background{
+    width: 100%;
+    background-color: var.$transparent;
+    display: none;//Oculto!
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    z-index: 10;
+    @media (max-width: 1024px){
+        display: none;
+    }
+}
+
+#close_gallery{
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+}
+
+#desktop_next {
+    width: 3rem;
+    position: absolute;
+    left: 0;
+    margin: auto;
+    margin-left: 1rem;
+
+}
+
+#desktop_previous {
+    width: 3rem;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    margin-right: 1rem;
+}
+.gallery_desktop_side{
+    margin-top: 2rem;
+    background-image: url(../imagenes/productos/iphone/iphone14pro.webp);
+    height: 30rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+.gallery_desktop_minis{
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    padding-top: 1rem;
+}
+
+
+#desktop_img_2{
+    width: 45%;
+    border-radius: 1rem;
+}
+#desktop_img_3{
+    width: 45%;
+    border-radius: 1rem;
+}

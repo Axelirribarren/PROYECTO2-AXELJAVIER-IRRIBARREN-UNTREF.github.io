@@ -1,0 +1,24 @@
+@use "var";
+.nav_bar{
+    width: 100%;
+    @media (max-width:1023px){
+        display: none;
+    }
+}
+
+.nav_bar_items{
+    display: flex;
+    justify-content: space-evenly;
+    list-style:none;
+}
+
+.nav_bar_link{
+    text-decoration:none;
+    color: var.$secondary-color;
+    font-size: 1.8rem;
+    font-family: var.$font-description;
+    &:hover{
+        border-bottom: 3px solid var.$secondary-color;
+        color: var.$black;
+    }
+}
