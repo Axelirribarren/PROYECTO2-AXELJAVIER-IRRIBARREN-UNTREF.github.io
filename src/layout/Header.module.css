@@ -1,0 +1,141 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur));
+    border-bottom: 1px solid var(--glass-border);
+    padding: var(--space-4) 0;
+    transition: all var(--transition-normal);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-main);
+    letter-spacing: -0.02em;
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.nav {
+    display: none;
+}
+
+.nav ul {
+    display: flex;
+    gap: var(--space-6);
+}
+
+.navLink {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast);
+    position: relative;
+}
+
+.navLink:hover,
+.navLink.active {
+    color: var(--color-text-main);
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width var(--transition-fast);
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.cartBtn {
+    position: relative;
+    padding: var(--space-2);
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--color-primary);
+    color: white;
+    font-size: 0.75rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.menuBtn {
+    display: block;
+    cursor: pointer;
+    padding: var(--space-2);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-bg-base);
+    padding: var(--space-8);
+    transform: translateX(-100%);
+    transition: transform var(--transition-normal);
+    z-index: 99;
+}
+
+.mobileMenu.open {
+    transform: translateX(0);
+}
+
+.mobileNav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    font-size: var(--font-size-xl);
+    margin-top: var(--space-12);
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .nav {
+        display: block;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: none;
+    }
+}
