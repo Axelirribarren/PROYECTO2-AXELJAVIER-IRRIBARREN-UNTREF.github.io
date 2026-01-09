@@ -214,5 +214,325 @@
         "rating": 4
       }
     ]
+  },
+  {
+    "id": 7,
+    "marca": "Samsung",
+    "titulo": "Galaxy S23 Ultra",
+    "img1": "https://via.placeholder.com/400x400?text=S23+Ultra",
+    "img2": "",
+    "img3": "",
+    "precio": "$850.000",
+    "descripcion": "El rey de la fotografía nocturna con su sensor de 200MP. Incluye el S-Pen integrado para productividad y creatividad sin límites. Su procesador Snapdragon 8 Gen 2 for Galaxy ofrece el rendimiento más rápido en Android hasta la fecha.",
+    "oferta": "$799.000",
+    "descuento": "6%",
+    "specs": {
+      "Pantalla": "6.8\" Dynamic AMOLED 2X 120Hz",
+      "Procesador": "Snapdragon 8 Gen 2",
+      "Almacenamiento": "256GB / 512GB / 1TB",
+      "Cámara": "200MP + 12MP + 10MP + 10MP",
+      "Batería": "5000 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Carlos Mendez",
+        "comment": "El zoom de 100x es una locura, se ve todo.",
+        "rating": 5
+      },
+      {
+        "user": "Sofía L.",
+        "comment": "Es un poco pesado en la mano, pero la pantalla es increíble.",
+        "rating": 4
+      },
+      {
+        "user": "Esteban D.",
+        "comment": "El S-Pen es super útil para editar fotos rápido.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "marca": "Motorola",
+    "titulo": "Edge 40 Pro",
+    "img1": "https://via.placeholder.com/400x400?text=Edge+40+Pro",
+    "img2": "",
+    "img3": "",
+    "precio": "$620.000",
+    "descripcion": "Diseño curvo sin bordes y una velocidad de carga que asusta: 125W que cargan tu teléfono en minutos. Ideal para quienes buscan estética y fluidez pura con una experiencia de Android casi stock.",
+    "oferta": null,
+    "descuento": null,
+    "specs": {
+      "Pantalla": "6.67\" pOLED 165Hz",
+      "Procesador": "Snapdragon 8 Gen 2",
+      "Almacenamiento": "256GB / 512GB",
+      "Cámara": "50MP + 50MP + 12MP",
+      "Batería": "4600 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Federico R.",
+        "comment": "La carga rápida me cambió la vida, en 15 min está listo.",
+        "rating": 5
+      },
+      {
+        "user": "Ana Clara",
+        "comment": "Muy lindo diseño, pero resbala un poco sin funda.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "marca": "Xiaomi",
+    "titulo": "Xiaomi 13T Pro",
+    "img1": "https://via.placeholder.com/400x400?text=Xiaomi+13T+Pro",
+    "img2": "",
+    "img3": "",
+    "precio": "$580.000",
+    "descripcion": "Fotografía co-desarrollada con Leica para colores profesionales. Un rendimiento bestial gracias al chip Dimensity 9200+ y una pantalla CrystalRes que compite con los más caros del mercado.",
+    "oferta": "$522.000",
+    "descuento": "10%",
+    "specs": {
+      "Pantalla": "6.67\" AMOLED 144Hz",
+      "Procesador": "Dimensity 9200+",
+      "Almacenamiento": "256GB / 512GB / 1TB",
+      "Cámara": "50MP + 50MP + 12MP (Leica)",
+      "Batería": "5000 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Gonzalo V.",
+        "comment": "Calidad precio imbatible, las fotos salen muy naturales.",
+        "rating": 5
+      },
+      {
+        "user": "Marta S.",
+        "comment": "Vuela con los juegos, no calienta nada.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "marca": "Apple",
+    "titulo": "iPhone 15",
+    "img1": "https://via.placeholder.com/400x400?text=iPhone+15",
+    "img2": "",
+    "img3": "",
+    "precio": "$780.000",
+    "descripcion": "El nuevo estándar con USB-C y Dynamic Island en el modelo base. Cámara principal de 48MP para una resolución superalta y un diseño con parte posterior de vidrio con infusión de color.",
+    "oferta": null,
+    "descuento": null,
+    "specs": {
+      "Pantalla": "6.1\" Super Retina XDR OLED",
+      "Procesador": "A16 Bionic",
+      "Almacenamiento": "128GB / 256GB / 512GB",
+      "Cámara": "48MP + 12MP",
+      "Batería": "3349 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Julieta P.",
+        "comment": "El color rosa es hermoso y por fin tiene USB-C.",
+        "rating": 5
+      },
+      {
+        "user": "Marcos T.",
+        "comment": "Buen upgrade desde el 11, se nota la diferencia de pantalla.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "marca": "Google",
+    "titulo": "Pixel 8 Pro",
+    "img1": "https://via.placeholder.com/400x400?text=Pixel+8+Pro",
+    "img2": "",
+    "img3": "",
+    "precio": "$750.000",
+    "descripcion": "El teléfono Android más inteligente. Con el chip Tensor G3, ofrece funciones de IA únicas como Magic Editor y Best Take. La mejor experiencia pura de Google con 7 años de actualizaciones.",
+    "oferta": "$690.000",
+    "descuento": "8%",
+    "specs": {
+      "Pantalla": "6.7\" LTPO OLED 120Hz",
+      "Procesador": "Google Tensor G3",
+      "Almacenamiento": "128GB / 256GB",
+      "Cámara": "50MP + 48MP + 48MP",
+      "Batería": "5050 mAh"
+    },
+    "reviews": [
+      {
+        "user": "David K.",
+        "comment": "La IA para arreglar fotos es magia negra, impresionante.",
+        "rating": 5
+      },
+      {
+        "user": "Lucia M.",
+        "comment": "La batería dura el día justo, pero la cámara lo vale.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "marca": "Samsung",
+    "titulo": "Galaxy Z Flip 5",
+    "img1": "https://via.placeholder.com/400x400?text=Z+Flip+5",
+    "img2": "",
+    "img3": "",
+    "precio": "$680.000",
+    "descripcion": "El plegable que cabe en tu bolsillo ahora con una pantalla externa mucho más grande (Flex Window) para responder mensajes y usar mapas sin abrir el teléfono. Estilo y funcionalidad en uno.",
+    "oferta": null,
+    "descuento": null,
+    "specs": {
+      "Pantalla": "6.7\" Dynamic AMOLED 2X (Plegable)",
+      "Procesador": "Snapdragon 8 Gen 2",
+      "Almacenamiento": "256GB / 512GB",
+      "Cámara": "12MP + 12MP",
+      "Batería": "3700 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Valentina S.",
+        "comment": "Me encanta que entre en mis bolsillos pequeños. Muy chic.",
+        "rating": 5
+      },
+      {
+        "user": "Jorge B.",
+        "comment": "La pantalla externa es super práctica.",
+        "rating": 5
+      },
+      {
+        "user": "Pedro A.",
+        "comment": "Se marca un poco el pliegue, pero te acostumbras.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "marca": "Samsung",
+    "titulo": "Galaxy A54 5G",
+    "img1": "https://via.placeholder.com/400x400?text=Galaxy+A54",
+    "img2": "",
+    "img3": "",
+    "precio": "$380.000",
+    "descripcion": "El rey de la gama media. Resistente al agua (IP67), con una pantalla Super AMOLED brillante y un diseño de cristal premium heredado de la serie S. Batería para todo el día.",
+    "oferta": "$342.000",
+    "descuento": "10%",
+    "specs": {
+      "Pantalla": "6.4\" Super AMOLED 120Hz",
+      "Procesador": "Exynos 1380",
+      "Almacenamiento": "128GB / 256GB",
+      "Cámara": "50MP + 12MP + 5MP",
+      "Batería": "5000 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Camila O.",
+        "comment": "Por el precio es lo mejor que hay, saca muy buenas fotos.",
+        "rating": 5
+      },
+      {
+        "user": "Rodrigo F.",
+        "comment": "Buen celular, aunque carga un poco lento.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "marca": "Motorola",
+    "titulo": "Moto G84 5G",
+    "img1": "https://via.placeholder.com/400x400?text=Moto+G84",
+    "img2": "",
+    "img3": "",
+    "precio": "$320.000",
+    "descripcion": "Diseño con acabado en cuero vegano Pantone y un sistema de cámaras de 50MP con OIS. Pantalla pOLED vibrante a un precio accesible. Mucha RAM y almacenamiento de base.",
+    "oferta": null,
+    "descuento": null,
+    "specs": {
+      "Pantalla": "6.5\" pOLED 120Hz",
+      "Procesador": "Snapdragon 695 5G",
+      "Almacenamiento": "256GB",
+      "Cámara": "50MP + 8MP",
+      "Batería": "5000 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Nico G.",
+        "comment": "El color rojo es hermoso y al tacto se siente premium.",
+        "rating": 5
+      },
+      {
+        "user": "Laura H.",
+        "comment": "Funciona rápido para redes sociales y videos.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "marca": "Xiaomi",
+    "titulo": "Poco F5",
+    "img1": "https://via.placeholder.com/400x400?text=Poco+F5",
+    "img2": "",
+    "img3": "",
+    "precio": "$450.000",
+    "descripcion": "Potencia bruta para gaming. Con el procesador Snapdragon 7+ Gen 2, ofrece un rendimiento casi de gama alta por la mitad de precio. Biseles de pantalla ultra finos.",
+    "oferta": "$405.000",
+    "descuento": "10%",
+    "specs": {
+      "Pantalla": "6.67\" Flow AMOLED 120Hz",
+      "Procesador": "Snapdragon 7+ Gen 2",
+      "Almacenamiento": "256GB",
+      "Cámara": "64MP + 8MP + 2MP",
+      "Batería": "5000 mAh"
+    },
+    "reviews": [
+      {
+        "user": "GamerX",
+        "comment": "Corre Genshin Impact en gráficos altos sin trabarse.",
+        "rating": 5
+      },
+      {
+        "user": "Pablo Z.",
+        "comment": "La cámara es normalita, pero la velocidad es increíble.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "marca": "Apple",
+    "titulo": "iPhone 13",
+    "img1": "https://via.placeholder.com/400x400?text=iPhone+13",
+    "img2": "",
+    "img3": "",
+    "precio": "$550.000",
+    "descripcion": "El clásico moderno. Sigue siendo una bestia en rendimiento con el chip A15 Bionic. Modo Cine para grabar videos con profundidad de campo y una batería que aguanta todo el día.",
+    "oferta": null,
+    "descuento": null,
+    "specs": {
+      "Pantalla": "6.1\" Super Retina XDR OLED",
+      "Procesador": "A15 Bionic",
+      "Almacenamiento": "128GB / 256GB",
+      "Cámara": "12MP + 12MP",
+      "Batería": "3240 mAh"
+    },
+    "reviews": [
+      {
+        "user": "Micaela R.",
+        "comment": "Sigue valiendo la pena totalmente en 2024.",
+        "rating": 5
+      },
+      {
+        "user": "Tomás W.",
+        "comment": "Buen tamaño y saca fotos perfectas para Instagram.",
+        "rating": 5
+      }
+    ]
   }
 ]

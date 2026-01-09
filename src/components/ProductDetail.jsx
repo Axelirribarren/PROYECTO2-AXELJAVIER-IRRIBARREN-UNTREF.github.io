@@ -38,7 +38,11 @@ const ProductDetail = ({ product, onBack }) => {
             <div className={styles.grid}>
                 {/* Left Column: Image */}
                 <div className={styles.imageSection}>
-                    <img src={img1} alt={titulo} className={styles.mainImage} />
+                    <img
+                        src={img1 || 'https://via.placeholder.com/600x600?text=No+Image'}
+                        alt={titulo}
+                        className={styles.mainImage}
+                    />
                 </div>
 
                 {/* Right Column: Info */}

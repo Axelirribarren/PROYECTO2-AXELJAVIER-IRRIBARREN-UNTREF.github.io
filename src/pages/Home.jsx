@@ -7,9 +7,9 @@ const Home = () => {
     const [selectedProduct, setSelectedProduct] = React.useState(null);
     const [viewMode, setViewMode] = React.useState('grid'); // 'grid' | 'list'
 
-    // Splitting data for demo purposes
-    const newArrivals = productsData.slice(0, 3);
-    const saleItems = productsData.slice(3, 6);
+    // Splitting data for demo purposes: First 4 as New Arrivals, Rest as Offers/Catalog
+    const newArrivals = productsData.slice(0, 4);
+    const saleItems = productsData.slice(4);
 
     const handleProductSelect = (product) => {
         setSelectedProduct(product);
