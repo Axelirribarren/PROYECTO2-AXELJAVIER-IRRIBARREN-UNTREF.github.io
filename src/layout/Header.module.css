@@ -3,12 +3,10 @@
     top: 0;
     z-index: 100;
     width: 100%;
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--backdrop-blur));
-    -webkit-backdrop-filter: blur(var(--backdrop-blur));
-    border-bottom: 1px solid var(--glass-border);
+    background-color: var(--color-nav-footer-bg);
+    color: var(--color-nav-text);
     padding: var(--space-4) 0;
-    transition: all var(--transition-normal);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -18,15 +16,10 @@
 }
 
 .logo {
-    font-family: var(--font-family-display);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-main);
+    color: var(--color-nav-text);
     letter-spacing: -0.02em;
-}
-
-.logo span {
-    color: var(--color-primary);
 }
 
 .nav {
@@ -35,34 +28,21 @@
 
 .nav ul {
     display: flex;
-    gap: var(--space-6);
+    gap: var(--space-8);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navLink {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
     font-weight: var(--font-weight-medium);
-    color: var(--color-text-muted);
     transition: color var(--transition-fast);
-    position: relative;
 }
 
-.navLink:hover,
-.navLink.active {
-    color: var(--color-text-main);
-}
-
-.navLink::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--color-accent);
-    transition: width var(--transition-fast);
-}
-
-.navLink:hover::after {
-    width: 100%;
+.navLink:hover {
+    color: #ffffff;
 }
 
 .actions {
@@ -71,32 +51,58 @@
     gap: var(--space-4);
 }
 
+.loginBtn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+}
+
+.loginBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.userInfo {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .cartBtn {
     position: relative;
-    padding: var(--space-2);
     cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .badge {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -5px;
+    right: -5px;
     background: var(--color-primary);
     color: white;
-    font-size: 0.75rem;
-    width: 18px;
+    font-size: 0.7rem;
+    min-width: 18px;
     height: 18px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    padding: 0 4px;
 }
 
 .menuBtn {
     display: block;
+    background: none;
+    border: none;
+    color: white;
     cursor: pointer;
-    padding: var(--space-2);
+    padding: 0;
 }
 
 /* Mobile Menu */
@@ -106,26 +112,51 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--color-bg-base);
-    padding: var(--space-8);
+    background: var(--color-nav-footer-bg);
+    padding: var(--space-6);
     transform: translateX(-100%);
     transition: transform var(--transition-normal);
-    z-index: 99;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobileMenu.open {
     transform: translateX(0);
 }
 
+.closeMenuBtn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: var(--space-8);
+}
+
 .mobileNav {
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
-    font-size: var(--font-size-xl);
-    margin-top: var(--space-12);
+    font-size: var(--font-size-lg);
 }
 
-/* Desktop Styles */
+.mobileNavLink {
+    color: white;
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+}
+
+.mobileLoginBtn {
+    margin-top: var(--space-4);
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-3);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     .nav {
         display: block;

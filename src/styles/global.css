@@ -7,7 +7,8 @@ body {
     font-family: var(--font-family-main);
     line-height: 1.6;
     overflow-x: hidden;
-    transition: background-color var(--transition-normal);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 #root {

@@ -3,13 +3,28 @@ import styles from './ProductCard.module.css';
 import { useCart } from '../context/CartContext';
 
 const ProductCard = ({ product }) => {
-    const { marca, titulo, img1, precio, oferta, descuento } = product;
-    const { addToCart } = useCart();
+    // Ensure properties exist, default to safe values
+    const {
+        marca = '',
+        titulo = 'Producto',
+        img1 = '',
+        precio = '$0',
+        oferta = null,
+        descuento = ''
+    } = product;
+
+    // Convert checks to boolean for cleaner logic
+    const hasOffer = oferta && oferta !== precio;
 
     return (
         <article className={styles.card}>
             <div className={styles.imageWrapper}>
-                <img src={img1} alt={`${marca} ${titulo}`} className={styles.image} loading="lazy" />
+                <img
+                    src={img1 || 'https://via.placeholder.com/300x300?text=No+Image'}
+                    alt={`${marca} ${titulo}`}
+                    className={styles.image}
+                    loading="lazy"
+                />
             </div>
 
             <div className={styles.content}>
@@ -17,12 +32,12 @@ const ProductCard = ({ product }) => {
                 <h3 className={styles.title}>{titulo}</h3>
 
                 <div className={styles.prices}>
-                    {oferta ? (
+                    {hasOffer ? (
                         <>
                             <span className={styles.priceBefore}>{precio}</span>
                             <div className={styles.priceRow}>
                                 <span className={styles.price}>{oferta}</span>
-                                <span className={styles.discount}>-{descuento}</span>
+                                <span className={styles.discount}>{descuento || 'Oferta'}</span>
                             </div>
                         </>
                     ) : (
@@ -30,13 +45,11 @@ const ProductCard = ({ product }) => {
                     )}
                 </div>
 
-                <button
-                    className="btn btn-primary"
-                    style={{ marginTop: '1rem', width: '100%' }}
-                    onClick={() => addToCart(product)}
-                >
-                    Añadir al Carrito
-                </button>
+                <div className={styles.actions}>
+                    <button className="btn btn-primary" style={{ width: '100%' }}>
+                        Ver más
+                    </button>
+                </div>
             </div>
         </article>
     );

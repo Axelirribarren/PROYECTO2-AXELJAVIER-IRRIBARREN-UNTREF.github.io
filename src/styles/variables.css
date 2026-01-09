@@ -1,23 +1,21 @@
 :root {
-  /* Colors - Premium Pallette (Dark refinement with Gold accents) */
-  --color-primary: 210 100% 50%; /* Vibrant Blue for Call to Actions */
-  --color-primary-dark: 210 100% 40%;
-  --color-accent: 45 100% 50%; /* Gold for subtle highlights */
+  /* Colors - User Specified */
+  --color-bg-base: #F8F9FA; /* Blanco humo muy suave */
+  --color-bg-white: #FFFFFF;
+  --color-bg-accent: #F3F4F6; /* Offers background */
   
-  --color-bg-base: 220 20% 10%; /* Very Dark Blue/Grey */
-  --color-bg-surface: 220 20% 16%;
-  --color-bg-surface-2: 220 20% 22%;
+  --color-nav-footer-bg: #1A1A1A; /* Negro suave */
+  --color-nav-text: #FFFFFF;
   
-  --color-text-main: 0 0% 100%;
-  --color-text-muted: 220 10% 70%;
-  --color-text-dark: 220 20% 10%;
-
-  --color-status-success: 140 70% 50%;
-  --color-status-error: 350 80% 60%;
+  --color-primary: #6366F1; /* Indigo suave */
+  --color-primary-dark: #4f46e5;
+  
+  --color-text-main: #333333; /* Gris oscuro */
+  --color-text-light: #F8F9FA;
+  --color-text-muted: #6B7280;
 
   /* Typography */
-  --font-family-main: 'Outfit', 'Inter', system-ui, sans-serif;
-  --font-family-display: 'Montserrat', system-ui, sans-serif;
+  --font-family-main: 'Inter', 'Roboto', system-ui, sans-serif;
   
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -41,20 +39,15 @@
   --space-12: 3rem;
   --space-16: 4rem;
 
-  /* Shadows & Glassmorphism */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3);
-  --shadow-glow: 0 0 15px var(--color-primary);
-
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --backdrop-blur: 12px;
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 
   /* Border Radius */
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
-  --radius-lg: 1rem;
+  --radius-lg: 12px; /* 12px or 16px as requested */
+  --radius-xl: 16px;
   --radius-full: 9999px;
   
   /* Transitions */

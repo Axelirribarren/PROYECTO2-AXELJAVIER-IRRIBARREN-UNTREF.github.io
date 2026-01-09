@@ -1,71 +1,54 @@
 .footer {
-    background-color: var(--color-bg-surface);
-    padding: var(--space-8) 0;
+    background-color: var(--color-nav-footer-bg);
+    color: var(--color-bg-base);
+    /* Using base bg color as text for contrast */
+    padding: var(--space-12) 0 var(--space-6);
     margin-top: auto;
-    border-top: 1px solid var(--glass-border);
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: var(--space-8);
-    align-items: center;
-    text-align: center;
+    margin-bottom: var(--space-8);
 }
 
 .section h3 {
+    color: white;
     font-size: var(--font-size-lg);
-    color: var(--color-text-main);
     margin-bottom: var(--space-4);
+    font-weight: var(--font-weight-bold);
 }
 
 .links {
     display: flex;
-    justify-content: center;
-    gap: var(--space-6);
+    flex-direction: column;
+    gap: var(--space-3);
 }
 
 .linkItem {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: var(--space-2);
-    color: var(--color-text-muted);
+    color: #9CA3AF;
+    text-decoration: none;
     transition: color var(--transition-fast);
 }
 
 .linkItem:hover {
-    color: var(--color-primary);
-}
-
-.linkItem svg {
-    width: 24px;
-    height: 24px;
+    color: white;
 }
 
 .credits {
-    margin-top: var(--space-8);
-    padding-top: var(--space-4);
-    border-top: 1px solid var(--glass-border);
-    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--space-6);
     text-align: center;
-    color: var(--color-text-dark);
+    color: #6B7280;
     font-size: var(--font-size-sm);
-    background: var(--color-accent);
-    /* Special request styling maybe? use refined style */
-    background: transparent;
-    color: var(--color-text-muted);
-}
-
-.credits strong {
-    color: var(--color-accent);
 }
 
 @media (min-width: 768px) {
     .content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        text-align: left;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
