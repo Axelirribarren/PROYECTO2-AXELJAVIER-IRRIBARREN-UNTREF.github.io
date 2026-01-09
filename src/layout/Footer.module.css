@@ -1,0 +1,71 @@
+.footer {
+    background-color: var(--color-bg-surface);
+    padding: var(--space-8) 0;
+    margin-top: auto;
+    border-top: 1px solid var(--glass-border);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    align-items: center;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-main);
+    margin-bottom: var(--space-4);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-6);
+}
+
+.linkItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast);
+}
+
+.linkItem:hover {
+    color: var(--color-primary);
+}
+
+.linkItem svg {
+    width: 24px;
+    height: 24px;
+}
+
+.credits {
+    margin-top: var(--space-8);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--glass-border);
+    width: 100%;
+    text-align: center;
+    color: var(--color-text-dark);
+    font-size: var(--font-size-sm);
+    background: var(--color-accent);
+    /* Special request styling maybe? use refined style */
+    background: transparent;
+    color: var(--color-text-muted);
+}
+
+.credits strong {
+    color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
