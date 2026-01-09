@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ProductCard.module.css';
 import { useCart } from '../context/CartContext';
 
-const ProductCard = ({ product, onSelect }) => {
+const ProductCard = ({ product, onSelect, viewMode = 'grid' }) => {
     // Ensure properties exist, default to safe values
     const {
         marca = '',
@@ -17,7 +17,7 @@ const ProductCard = ({ product, onSelect }) => {
     const hasOffer = oferta && oferta !== precio;
 
     return (
-        <article className={styles.card}>
+        <article className={`${styles.card} ${viewMode === 'list' ? styles.cardList : ''}`}>
             <div className={styles.imageWrapper}>
                 <img
                     src={img1 || 'https://via.placeholder.com/300x300?text=No+Image'}
