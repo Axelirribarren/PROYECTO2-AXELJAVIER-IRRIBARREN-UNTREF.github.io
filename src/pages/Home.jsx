@@ -1,11 +1,28 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
+import ProductDetail from '../components/ProductDetail';
 import productsData from '../assets/products.json';
 
 const Home = () => {
+    const [selectedProduct, setSelectedProduct] = React.useState(null);
+
     // Splitting data for demo purposes
     const newArrivals = productsData.slice(0, 3);
     const saleItems = productsData.slice(3, 6);
+
+    const handleProductSelect = (product) => {
+        setSelectedProduct(product);
+        // Scroll to top when opening detail
+        window.scrollTo(0, 0);
+    };
+
+    const handleBack = () => {
+        setSelectedProduct(null);
+    };
+
+    if (selectedProduct) {
+        return <ProductDetail product={selectedProduct} onBack={handleBack} />;
+    }
 
     return (
         <div>
@@ -29,7 +46,11 @@ const Home = () => {
                     gap: '2rem'
                 }}>
                     {newArrivals.map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        <ProductCard
+                            key={product.id}
+                            product={product}
+                            onSelect={handleProductSelect}
+                        />
                     ))}
                 </div>
             </section>
@@ -59,7 +80,11 @@ const Home = () => {
                         gap: '2rem'
                     }}>
                         {saleItems.map((product) => (
-                            <ProductCard key={product.id} product={product} />
+                            <ProductCard
+                                key={product.id}
+                                product={product}
+                                onSelect={handleProductSelect}
+                            />
                         ))}
                     </div>
                 </div>

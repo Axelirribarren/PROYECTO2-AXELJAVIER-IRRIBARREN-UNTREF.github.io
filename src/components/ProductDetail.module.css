@@ -1,0 +1,205 @@
+.container {
+    padding: 2rem 0;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.backButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+}
+
+.backButton:hover {
+    color: var(--color-primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1.2fr 1fr;
+    }
+}
+
+.imageSection {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.mainImage {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.priceBlock {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.currentPrice {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.oldPrice {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+}
+
+.discountTag {
+    background-color: #fee2e2;
+    color: #ef4444;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.description {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.specsTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-text-main);
+}
+
+.specsList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.specsList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+}
+
+.specsList li strong {
+    color: var(--color-text-main);
+}
+
+.addToCartBtn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: auto;
+}
+
+.reviewsSection {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.reviewsHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.reviewsTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.starRating {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reviewsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.reviewCard {
+    background-color: var(--color-bg-alt);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+}
+
+.reviewUser {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--color-text-main);
+}
+
+.reviewStars {
+    color: #ffd700;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.reviewText {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

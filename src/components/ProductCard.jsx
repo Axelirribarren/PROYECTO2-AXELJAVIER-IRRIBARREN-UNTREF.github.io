@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ProductCard.module.css';
 import { useCart } from '../context/CartContext';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onSelect }) => {
     // Ensure properties exist, default to safe values
     const {
         marca = '',
@@ -46,7 +46,11 @@ const ProductCard = ({ product }) => {
                 </div>
 
                 <div className={styles.actions}>
-                    <button className="btn btn-primary" style={{ width: '100%' }}>
+                    <button
+                        className="btn btn-primary"
+                        style={{ width: '100%' }}
+                        onClick={() => onSelect(product)}
+                    >
                         Ver más
                     </button>
                 </div>
