@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import styles from './Header.module.css';
 import { useCart } from '../context/CartContext';
 import LoginModal from '../components/LoginModal';
+import CartSidebar from '../components/CartSidebar';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
     const [user, setUser] = useState(null); // null = Guest, string = Username
     const { totalItems } = useCart();
 
@@ -65,7 +67,7 @@ const Header = () => {
                             </button>
                         )}
 
-                        <div className={styles.cartBtn}>
+                        <div className={styles.cartBtn} onClick={() => setIsCartOpen(true)} style={{ cursor: 'pointer' }}>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -102,6 +104,11 @@ const Header = () => {
                 isOpen={isLoginOpen}
                 onClose={() => setIsLoginOpen(false)}
                 onLogin={handleLogin}
+            />
+
+            <CartSidebar
+                isOpen={isCartOpen}
+                onClose={() => setIsCartOpen(false)}
             />
         </>
     );
