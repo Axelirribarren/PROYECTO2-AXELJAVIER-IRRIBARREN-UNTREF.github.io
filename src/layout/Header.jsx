@@ -32,7 +32,7 @@ const Header = () => {
     const navItems = [
         { label: 'Catálogo', href: '#catalogo' },
         { label: 'Ofertas', href: '#ofertas' },
-        { label: 'Contacto', href: '#contacto' },
+        { label: 'Contacto', href: '#footer' },
     ];
 
     return (
@@ -51,7 +51,7 @@ const Header = () => {
 
                     {/* Logo */}
                     <div className={styles.logo}>
-                        Axel Phone Store
+                        Zedier Phone Store
                     </div>
 
                     {/* Desktop Nav */}
