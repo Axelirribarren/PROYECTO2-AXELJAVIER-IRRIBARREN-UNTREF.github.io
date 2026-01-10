@@ -1,6 +1,6 @@
-# 📱 Axel Phone Store
+# 📱 Zedier Phone Store
 
-Welcome to **Axel Phone Store**, a modern, responsive e-commerce application designed for browsing and purchasing mobile devices. This project showcases a clean UI, dynamic product interactions, and a simulated checkout flow, built with the latest web technologies.
+Welcome to **Zedier Phone Store**, a modern, responsive e-commerce application designed for browsing and purchasing mobile devices. This project showcases a clean UI, dynamic product interactions, and a simulated checkout flow, built with the latest web technologies.
 
 ## ✨ Features
 
