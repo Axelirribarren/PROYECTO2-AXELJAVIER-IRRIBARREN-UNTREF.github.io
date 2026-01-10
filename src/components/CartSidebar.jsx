@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './CartSidebar.module.css';
 import { useCart } from '../context/CartContext';
 
-const CartSidebar = ({ isOpen, onClose }) => {
+const CartSidebar = ({ isOpen, onClose, onCheckout }) => {
     const { cartItems, removeFromCart, updateQuantity } = useCart();
 
     // Helper to parse price string to number (e.g. "$700.000" -> 700000)
@@ -69,7 +69,10 @@ const CartSidebar = ({ isOpen, onClose }) => {
                             <span className={styles.totalLabel}>Total:</span>
                             <span className={styles.totalAmount}>{calculateTotal()}</span>
                         </div>
-                        <button className={`btn btn-primary ${styles.checkoutBtn}`}>
+                        <button
+                            className={`btn btn-primary ${styles.checkoutBtn}`}
+                            onClick={onCheckout}
+                        >
                             Finalizar Compra
                         </button>
                     </div>

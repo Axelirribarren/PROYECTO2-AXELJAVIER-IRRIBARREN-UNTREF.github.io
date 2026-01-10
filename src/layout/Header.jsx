@@ -3,11 +3,13 @@ import styles from './Header.module.css';
 import { useCart } from '../context/CartContext';
 import LoginModal from '../components/LoginModal';
 import CartSidebar from '../components/CartSidebar';
+import CheckoutModal from '../components/CheckoutModal';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
     const [user, setUser] = useState(null); // null = Guest, string = Username
     const { totalItems } = useCart();
 
@@ -16,11 +18,19 @@ const Header = () => {
     const handleLogin = (username) => {
         setUser(username);
         setIsLoginOpen(false);
-        // Alert or subtle notification could go here, but UI update is visible
+    };
+
+    const handleCheckoutRequest = () => {
+        setIsCartOpen(false);
+        if (!user) {
+            setIsLoginOpen(true);
+        } else {
+            setIsCheckoutOpen(true);
+        }
     };
 
     const navItems = [
-        { label: 'Nuevos Celulares', href: '#catalogo' },
+        { label: 'Catálogo', href: '#catalogo' },
         { label: 'Ofertas', href: '#ofertas' },
         { label: 'Contacto', href: '#contacto' },
     ];
@@ -41,7 +51,7 @@ const Header = () => {
 
                     {/* Logo */}
                     <div className={styles.logo}>
-                        Celulares
+                        Axel Phone Store
                     </div>
 
                     {/* Desktop Nav */}
@@ -109,6 +119,12 @@ const Header = () => {
             <CartSidebar
                 isOpen={isCartOpen}
                 onClose={() => setIsCartOpen(false)}
+                onCheckout={handleCheckoutRequest}
+            />
+
+            <CheckoutModal
+                isOpen={isCheckoutOpen}
+                onClose={() => setIsCheckoutOpen(false)}
             />
         </>
     );

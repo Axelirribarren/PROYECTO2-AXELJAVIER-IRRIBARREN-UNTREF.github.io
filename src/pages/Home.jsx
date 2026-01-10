@@ -7,9 +7,14 @@ const Home = () => {
     const [selectedProduct, setSelectedProduct] = React.useState(null);
     const [viewMode, setViewMode] = React.useState('grid'); // 'grid' | 'list'
 
-    // Splitting data for demo purposes: First 4 as New Arrivals, Rest as Offers/Catalog
-    const newArrivals = productsData.slice(0, 4);
-    const saleItems = productsData.slice(4);
+    // Data Logic
+    const allProducts = productsData; // "Catálogo" shows everything
+
+    // Random 6 offers
+    const offers = React.useMemo(() => {
+        const shuffled = [...productsData].sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, 6);
+    }, []);
 
     const handleProductSelect = (product) => {
         setSelectedProduct(product);
@@ -62,7 +67,7 @@ const Home = () => {
 
     return (
         <div>
-            {/* Nuevos Celulares Section */}
+            {/* Catálogo Section */}
             <section className="container" id="catalogo" style={{ padding: '4rem 1.5rem' }}>
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <h2 style={{
@@ -71,15 +76,15 @@ const Home = () => {
                         color: 'var(--color-text-main)',
                         marginBottom: '0.5rem'
                     }}>
-                        Nuevos Celulares
+                        Catálogo Completo
                     </h2>
-                    <p style={{ color: 'var(--color-text-muted)' }}>La última tecnología en tus manos.</p>
+                    <p style={{ color: 'var(--color-text-muted)' }}>Explora nuestra colección completa de dispositivos.</p>
                 </div>
 
                 <ViewToggle />
 
                 <div style={gridStyle}>
-                    {newArrivals.map((product) => (
+                    {allProducts.map((product) => (
                         <ProductCard
                             key={product.id}
                             product={product}
@@ -110,7 +115,7 @@ const Home = () => {
                     </div>
 
                     <div style={gridStyle}>
-                        {saleItems.map((product) => (
+                        {offers.map((product) => (
                             <ProductCard
                                 key={product.id}
                                 product={product}
