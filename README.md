@@ -1,16 +1,55 @@
-# React + Vite
+# 📱 Axel Phone Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Axel Phone Store**, a modern, responsive e-commerce application designed for browsing and purchasing mobile devices. This project showcases a clean UI, dynamic product interactions, and a simulated checkout flow, built with the latest web technologies.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Product Catalog**: Browse a comprehensive list of the latest smartphones.
+- **Grid & List Views**: Toggle between a visual grid layout and a detailed list view for products.
+- **Rich Product Details**: View technical specifications, descriptions, and user reviews for each device.
+- **Shopping Cart**: Fully functional cart with add, remove, and quantity management updates.
+- **Simulated Checkout**: A realistic checkout experience with a credit card form, validation, and processing states.
+- **Authentication Barrier**: Mock login system that protects the checkout process.
+- **Responsive Design**: Optimized for seamless experience across desktop, tablet, and mobile devices.
 
-## React Compiler
+## 🚀 Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was built using a modern frontend stack to ensure performance and maintainability:
 
-## Expanding the ESLint configuration
+- **[React 19](https://react.dev/)**: The library for web and native user interfaces.
+- **[Vite](https://vitejs.dev/)**: Next Generation Frontend Tooling for blazing fast build times.
+- **[CSS Modules](https://github.com/css-modules/css-modules)**: For scoped, maintainable component styling.
+- **JavaScript (ES6+)**: Core logic and state management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Getting Started
+
+Follow these steps to run the project locally:
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/axel-phone-store.git
+    cd axel-phone-store
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Navigate to `http://localhost:5173` to view the application.
+
+## 👤 Author
+
+**Axel Javier Irribarren**
+
+- Developer & Designer
+- [Contact](mailto:axelirribarren@gmail.com)
+
+---
+*This project is for educational and portfolio purposes.*
